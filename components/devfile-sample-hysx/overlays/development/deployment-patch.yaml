@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hysx
+  namespace: afred-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:997267370bee426cb3e3b4a81ff9ba6fd97e64ff9f29b48fc1acfa0e3a073459
+        name: my-nodejs
+        resources: {}
+status: {}
