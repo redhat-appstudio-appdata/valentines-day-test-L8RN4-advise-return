@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-hysx
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:afred-tenant-devfile-sample-hysx
+      - image: quay.io/redhat-appstudio/user-workload@sha256:997267370bee426cb3e3b4a81ff9ba6fd97e64ff9f29b48fc1acfa0e3a073459
         name: my-nodejs
         ports:
         - containerPort: 3001
